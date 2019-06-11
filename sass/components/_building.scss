@@ -1,0 +1,27 @@
+#building {
+    width: 100%;
+    margin-top: 250px;
+
+    .wrapper {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+        .building-wrapper {
+            // border: 1px solid red;
+        }
+
+        .img-wrapper {
+            // border: 1px solid green;
+            position: relative;
+            bottom: 180px;
+            right: 19%;
+
+            img {
+                width: 130%;
+            }
+        }
+
+    }
+}

@@ -1,8 +1,48 @@
 #building-slider {
     width: 100%;
+    border: 1px solid red;
+
 
     .wrapper {
-        max-width: 1200px;
+        max-width: 80%;
         margin: auto;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        height: 100%;
+
+
+        .buttons-wrapper {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .slider-wrapper {
+            flex: 9;
+            height: 100%;
+
+            .floor {
+                height: 500px;
+            }
+
+            .floor:not(:first-of-type) {
+                display: none;
+            }
+
+            .floor-1 {
+                background-color: green;
+             }
+
+             .floor-2 {
+                 background-color: red;
+             }
+
+             .floor-3 {
+                 background-color: blue;
+             }
+        }
     }
+
+    
 }

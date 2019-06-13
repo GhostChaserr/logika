@@ -1,0 +1,53 @@
+section#registration-popup {
+    .wrapper {
+        max-width: 80%;
+        margin: auto;
+        border: 1px solid blue;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    #popup {
+        height: 60vh;
+        border: 1px solid red;
+        flex-basis: 80%;
+        display: flex;
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .message-form {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .message-form .headline-wrapper {
+            border: 1px solid black;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .message-form .form-group {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border: 1px solid black;
+        }
+    }
+
+    #popup >* {
+        flex: 1;
+    }
+}

@@ -87,8 +87,10 @@
         <div class="wrapper">
             <div id="popup">
                 <div class="logo left">
-                    <h1> LOGO </h1>
-                    <p> ქობულეთი მოლი </p>
+                    <div class="logo-wrapper">
+                        <img src="https://i.ibb.co/H23p2rw/Asset-1.png" alt="">
+                    </div>
+                    <p> ქობულეთი <br> მოლი </p>
                 </div>
                 <form action="" class="message-form">
                     <div class="headline-wrapper">
@@ -96,19 +98,27 @@
                     </div>
                     <div class="form-group">
                         <label for="name"> სახელი </label>
-                        <input type="text" name="name" id="name">
+                        <input
+                            placeholder="ჩაწერე სახელი" 
+                            type="text" name="name" id="name">
                     </div>
                     <div class="form-group">
                         <label for="lastName" class="lastName"> გვარი </label>
-                        <input type="text" name="lastName" id="lastName">
+                        <input 
+                            placeholder="ჩაწერე გვარი"
+                            type="text" name="lastName" id="lastName">
                     </div>
                     <div class="form-group">
                         <label for="email" class="email"> ემაილი </label>
-                        <input type="email" name="email">
+                        <input placeholder="ჩაწერე იმეილი" type="email" name="email">
                     </div>
                     <div class="form-group">
-                        <label for="message"> მესიჯი </label>
-                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                        <textarea 
+                        placeholder="დატოვე მესიჯი"
+                        name="message" id="" 
+                        cols="1" rows="10">
+                        </textarea>
+
                     </div>
                     <div class="form-group">
                         <div class="submit-btn">

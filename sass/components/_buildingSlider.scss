@@ -1,8 +1,11 @@
 #building-slider {
     width: 100%;
     border: 1px solid red;
+    background-color: #565656;
+    padding: 50px 0;
 
     // Slider color 565656
+    
 
 
     .wrapper {
@@ -24,24 +27,122 @@
             flex: 9;
             height: 100%;
 
-            .floor {
-                height: 500px;
-            }
+            // .floor {
+            //     height: 500px;
+            // }
 
             .floor:not(:first-of-type) {
                 display: none;
             }
 
+        
             .floor-1 {
-                background-color: green;
+
+                // Hover color 59BAFC
+                // Basi Color 3D3D3D
+                
+                // slider_floor_1_room_1
+                #slider_floor_1_room_1 polygon,
+                #slider_floor_1_room_2 polygon,
+                #slider_floor_1_room_3 polygon,
+                #slider_floor_1_room_4 polygon,
+                #slider_floor_1_room_5 polygon,
+                #slider_floor_1_room_6 polygon {
+                    transition: 0.5s ease all;
+                    fill:  #313131 !important;
+                    cursor: pointer;
+                }
+
+                #slider_floor_1_room_1:hover polygon,
+                #slider_floor_1_room_2:hover polygon,
+                #slider_floor_1_room_3:hover polygon,
+                #slider_floor_1_room_4:hover polygon,
+                #slider_floor_1_room_5:hover polygon,
+                #slider_floor_1_room_6:hover polygon {
+                    fill: rgba(89, 187, 252, 0.705) !important;
+                    transition: 0.5s ease all;
+                }
+
+                #slider_floor_1_room_5 path {
+                    transition: all 0.5s ease;
+                    fill:  #313131 !important;
+                }
+
+
+                #slider_floor_1_room_5 path:hover{
+                    fill: rgba(89, 187, 252, 0.705) !important;
+                    transition: 0.4s ease all;
+                    cursor: pointer;
+                }
+
+                #slider_floor_1_room_4 rect {
+                    transition: all 0.5s ease;
+                    fill:  #313131 !important;
+                }
+
+
+                #slider_floor_1_room_4 rect:hover{
+                    fill: rgba(89, 187, 252, 0.705) !important;
+                    transition: 0.4s ease all;
+                    cursor: pointer;
+                }
+
+
              }
 
              .floor-2 {
-                 background-color: red;
+
+                #slider_floor2_rooms rect {
+                    transition: all 0.5s ease;
+                    cursor: pointer;
+                }
+                
+                #slider_floor2_rooms rect:hover {
+                    fill: rgba(89, 187, 252, 0.705) !important;
+                    transition: 0.4s ease all;
+                    cursor: pointer;
+                }
+
+                #slider_floor2_rooms polygon {
+                    transition: all 0.5s ease;
+                    cursor: pointer;
+                }
+                
+                #slider_floor2_rooms polygon:hover {
+                    fill: rgba(89, 187, 252, 0.705) !important;
+                    transition: 0.4s ease all;
+                    cursor: pointer;
+                }
+
              }
 
              .floor-3 {
-                 background-color: blue;
+
+                //  height: 500px; 
+
+                 .floor-3-wrapper {
+                     text-align: center;
+                 }
+
+                 .floor-3-wrapper svg {
+                     height: 400px;
+                 }
+
+                 rect, 
+                 polygon {
+                     fill: #313131;
+                     transition: all 0.3 ease;
+                     cursor: pointer;
+
+                 }
+
+                 rect:hover,
+                 polygon:hover {
+                    fill: rgba(89, 187, 252, 0.705) !important;
+                    transition: 0.4s ease all;
+                    cursor: pointer;
+                 }
+
              }
         }
     }

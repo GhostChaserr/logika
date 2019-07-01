@@ -143,3 +143,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 });
+
+
+// Popup script
+(function() {
+
+    // HTML VARS
+    const popupWrapper = document.querySelector("section#registration-popup");
+    const toggler = document.querySelector("#toggler");
+    const regButton = document.querySelector("#reg-btn");
+
+    toggler.addEventListener("click", function() {
+        popupWrapper.style.display = "none";
+    });
+
+    regButton.addEventListener("click", function() {
+        popupWrapper.style.display = "block";
+    });
+
+
+})();

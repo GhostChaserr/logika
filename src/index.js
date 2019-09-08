@@ -1,3 +1,6 @@
+// Load Css
+import "../global.css";
+
 
 // Load styles
 import "../sass/index.scss";

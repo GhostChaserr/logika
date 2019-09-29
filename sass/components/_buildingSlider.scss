@@ -41,7 +41,7 @@
 
             button:hover {
                 transition: 0.2 ease all;
-                color: #59BAFC;
+                color: rgb(69, 178, 250);
                 cursor: pointer;
             }
 
@@ -149,7 +149,9 @@
                  }
 
                  .floor-3-wrapper svg {
-                     height: 400px;
+                    width: 60%;
+                    height: auto;
+                    max-height: 400px;
                  }
 
                  rect, 
@@ -172,4 +174,10 @@
     }
 
     
+}
+
+@media screen and (max-width: 767.98px){
+      #building-slider .wrapper .slider-wrapper .floor-3 .floor-3-wrapper svg {
+        max-height: 250px;
+    }
 }

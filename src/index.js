@@ -66,11 +66,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 if(dataFloor === dataNav) {
                     floor.style.cssText = `
-
-                    fill : red;
+                    fill : rgb(69, 178, 250);
                     fill-opacity : 0.3;
-                    
-                    
                     `;
                 }
             })
@@ -149,12 +146,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Popup script
-(function() {
-
     // HTML VARS
     const popupWrapper = document.querySelector("section#registration-popup");
     const toggler = document.querySelector("#toggler");
-    const regButton = document.querySelector("#reg-btn");
+    const regButton = document.querySelector("#send-email");
 
     toggler.addEventListener("click", function() {
         popupWrapper.style.display = "none";
@@ -165,4 +160,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 
-})();
+

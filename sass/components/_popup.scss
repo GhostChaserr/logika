@@ -1,5 +1,5 @@
 section#registration-popup {
-
+    display: none;
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -14,8 +14,9 @@ section#registration-popup {
     // Logo URL https://i.ibb.co/H23p2rw/Asset-1.png
 
     .wrapper {
-        max-width: 50%;
         position: relative;
+        height: 570px;
+        width:630px;
         display: flex;
         justify-content: center;
         position: relative;
@@ -25,17 +26,18 @@ section#registration-popup {
     }
 
     #popup {
-        height: 60vh;
-        flex-basis: 80%;
+        height: 570px;
+        width:630px;
+        flex-basis: 100%;
         display: flex;
         box-shadow: 1px 1px 4px rgba(0, 0,0, 0.4);
         position: relative;
 
         #toggler {
             position: absolute;
-            right: 30px;
-            top: 30px;
-            font-size: 40px;
+            right: 2px;
+            top: 0;
+            font-size: 36px;
             color: #59BAFC;
             cursor: pointer;
         }
@@ -57,22 +59,22 @@ section#registration-popup {
         .message-form {
             display: flex;
             flex-direction: column;
-            height: 100%;
+            max-height: 100%;
             justify-content: center;
             align-items: flex-start;
-            padding: 20px;
+            padding: 10px;
             background-color: white;
+            background-image: url(https://i.ibb.co/H23p2rw/Asset-1.png);
         }
 
-        .message-form .headline-wrapper {
-            // border: 1px solid black;
-            width: 100%;
-            padding: 40px;
-            text-align: center;
+        .message-form  {
+
 
             h1 {
                 color: #59BAFC;
                 font-size: 19px;
+                margin: 20px 0;
+                align-self: center;
             }
         }
 
@@ -87,6 +89,7 @@ section#registration-popup {
             }
 
             textarea {
+                outline: none;
                 border: 2px solid #59BAFC;
                 margin-top: 5px;
                 border-radius: 10px;
@@ -105,7 +108,7 @@ section#registration-popup {
         }
 
         .submit-btn {
-
+            align-self: center;
             padding: 10px;
 
             input[type="submit"] {
@@ -135,4 +138,7 @@ section#registration-popup {
     #popup >* {
         flex: 1;
     }
+}
+.logic-logo{
+    display: none;
 }

@@ -63,6 +63,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 
                 // Get data attribute
                 const dataFloor = parseInt(floor.dataset.floor);
+                
+
+                // sadadas
 
                 if(dataFloor === dataNav) {
                     floor.style.cssText = `
